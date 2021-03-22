@@ -17,6 +17,7 @@
 package com.example.background
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -127,6 +128,7 @@ class SelectImageActivity : AppCompatActivity() {
     }
 
     /** Image Selection  */
+    @SuppressLint("TimberArgCount")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
